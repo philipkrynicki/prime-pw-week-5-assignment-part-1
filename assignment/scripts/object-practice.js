@@ -26,10 +26,10 @@ console.log('A little about me:', me);
     created above to set its value.
   - Console.log fullName
 */
-let fullName = me.firstName + me.lastName;
+let fullName = `${me.firstName} ${me.lastName}`;
 console.log ( fullName );
 
-// Also got some help on this from Kris
+// Also got some help on this from Kris.  I am having trouble getting a space between firstName and lastName
 
 /* 3. Nested arrays
   - Console.log your first favorite food
@@ -48,7 +48,7 @@ console.log('Last favorite food is', me.favThreeFoods[2] )
   - Console.log your updated shoe count.
 */
 console.log('Current shoe count is', me.shoeCount)
-me.shoeCount = 9
+me.shoeCount++
 console.log('Updated shoe count is', me.shoeCount)
 
 // Googled javascipt.plainenglish.io to figure out how to do this
