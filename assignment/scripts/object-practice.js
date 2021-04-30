@@ -13,10 +13,12 @@ const me = {
   lastName: 'Krynicki',
   hasSiblings: true,
   shoeCount: 8,
+  favThreeFoods: [ 'pizza', 'cupcakes', 'mangoes' ]
   // TODO - add properties here
 };
-  let favThreeFoods = [ 'pizza', 'cupcakes', 'mangoes' ];
+
 console.log('A little about me:', me);
+// Got some help from Kris in our study session on how to add an array to an Object literal
 
 /* 2. Accessing object properties.
   - Create a variable called fullName
@@ -24,17 +26,20 @@ console.log('A little about me:', me);
     created above to set its value.
   - Console.log fullName
 */
-let fullName = 'firstName ' + 'lastName';
-console.log ( me ( fullName ));
+let fullName = me.firstName + me.lastName;
+console.log ( fullName );
 
+// Also got some help on this from Kris
 
 /* 3. Nested arrays
   - Console.log your first favorite food
   - Console.log your last favorite food
 */
 
-console.log('First favorite food is', favThreeFoods[0])
-console.log('Last favorite food is', favThreeFoods[2])
+console.log('First favorite food is', me.favThreeFoods[0] )
+console.log('Last favorite food is', me.favThreeFoods[2] )
+
+//  Was able to figure everything out on my own from this point on!
 
 /* 4. Change a property of an existing object.
   - Console.log your current shoe count.
@@ -42,7 +47,11 @@ console.log('Last favorite food is', favThreeFoods[2])
   - Set your object's shoeCount to be what it was plus 1
   - Console.log your updated shoe count.
 */
-console.log('Current shoe count is', shoeCount )
+console.log('Current shoe count is', me.shoeCount)
+me.shoeCount = 9
+console.log('Updated shoe count is', me.shoeCount)
+
+// Googled javascipt.plainenglish.io to figure out how to do this
 
 /* 5. Add a new property to an existing object.
   - Add a 'favoriteColor' to your existing object
@@ -50,3 +59,6 @@ console.log('Current shoe count is', shoeCount )
   - Cool huh? It works, even though it wasn't there before
   - Console.log your object
 */
+me.favoriteColor = "Teal"
+console.log('Added favorite color is', me.favoriteColor)
+//  Googled javascript.plainenglish.io to figure out how to do this
